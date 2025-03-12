@@ -16,7 +16,7 @@
     <div class="container">
       <section class="brands">
         <h2 class="brands__subtitle">Ремонт техники различных брендов</h2>
-        <nav class="brands__menu">
+        <div class="brands__menu">
           <div class="swiper-container">
             <ul class="brands__list swiper-wrapper">
               <li class="brands__item swiper-slide swiper-slide-active">
@@ -126,23 +126,15 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button class="button button-show" id="btn-show-brands">
+          <button class="button brands__button" id="btn-toggle-brands">
             <img
-              class="button__icon button__icon-show"
+              class="button__icon"
               src="images/icons/icon.svg"
               alt="Двойная стрелка вниз"
             />
             <span class="button__text" href="">Показать все</span>
           </button>
-          <button class="button button-hide" id="btn-hide-brands">
-            <img
-              class="button__icon button__icon-hide"
-              src="images/icons/icon.svg"
-              alt="Двойная стрелка вверх"
-            />
-            <span class="button__text" href="">Скрыть</span>
-          </button>
-        </nav>
+        </div>
       </section>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

@@ -140,12 +140,8 @@ body {
   background-color: var(--pagination-active);
 }
 
-@media (max-width: 767px) {
-  .button,
-  .button-show,
-  .button-hide {
-    display: none !important;
-  }
+.brands__button {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -216,8 +212,7 @@ body {
     opacity: 0.7;
   }
 
-  .button-show,
-  .button-hide {
+  .brands__button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -235,8 +230,8 @@ body {
     opacity: 0.7;
   }
 
-  .button__icon-hide {
-    rotate: 180deg;
+  .button__icon-rotate {
+    transform: rotate(180deg);
   }
 
   .button__text {
@@ -286,11 +281,5 @@ body {
     flex-grow: 1;
     z-index: 10;
     border: 2px solid var(--pagination-active);
-  }
-
-  .button-hide {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: none;
   }
 }
